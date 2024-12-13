@@ -1,0 +1,103 @@
+.block {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 96px 0 107px 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap:96px;
+}
+.block p, .block span{
+    font-weight: 400;
+    font-size: 24px;
+    color: #0e190f;
+}
+.block1 {
+    width: 100% ;
+    display: flex;
+    justify-content: space-between;
+}
+.col1,
+.col2{
+    width: 517px;
+    position: relative;
+}
+.col2{
+    height: 183px;
+}
+.word1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.word2{
+    position: absolute;
+    top: 77px;
+    left: 199px;
+}
+.word3{
+    position: absolute;
+    bottom: 0;
+    left: 254px;
+}
+.block2 {
+    width: 100% ;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap:36px;
+}
+.love{
+    align-self: flex-end;
+    width: 372px;
+    height: 135px;
+}
+
+@media (min-width: 320px) and (max-width: 559px) {
+    .block {
+        width: calc(100% - 36px);
+        padding: 48px 0 48px 0 ;
+        gap:24px;
+        span{
+            font-size: 16px;
+        }
+    }
+    .block p{
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .block1{
+        flex-direction: column;
+        gap: 16px;
+    }
+    .col2{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap:12px;
+    }
+    .word1,
+    .word2,
+    .word3{
+        width: 100%;
+        position: unset;
+    }
+    .word1{
+        text-align: left;
+    }
+    .word2{
+        text-align: center;
+    }
+    .word3{
+        text-align: right;
+    }
+    .col1,
+    .col2{
+        width: 100%;
+    }
+    .love {
+        width: 250px;
+        height: auto;
+    }
+}

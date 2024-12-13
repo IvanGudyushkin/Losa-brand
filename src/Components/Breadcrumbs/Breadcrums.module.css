@@ -1,0 +1,33 @@
+.block{
+    width: 1200px;
+    margin: 0 auto;
+}
+.separator,
+.link {
+    text-decoration: unset;
+    color: var(--color-dark-green-half);
+    font-size: 24px;
+}
+.last {
+    color: var(--color-dark-green);
+    font-size: 24px;
+}
+@media (min-width: 960px) and (max-width: 1399px) {
+    .block {
+        width: 780px;
+    }
+}
+@media (min-width: 320px) and (max-width: 559px) {
+    .block {
+        width: calc(100% - 36px);
+    }
+    .link{
+        font-size: 14px;
+    }
+    .last{
+        font-size: 14px;
+    }
+    .separator{
+        font-size: 14px;
+    }
+}

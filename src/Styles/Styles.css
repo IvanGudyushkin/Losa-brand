@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'RobotoMono';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../Assets/Fonts/RobotoMono-Light.woff') format('woff');
+}
+@font-face {
+    font-family: 'RobotoMono';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../Assets/Fonts/RobotoMono-Regular.woff') format('woff');
+}
+
+:root{
+    --color-white: #E9E6DE;
+    --color-green: #324634;
+    --color-dark-green: #0E190F;
+    --color-dark-green-half:  rgba(14, 25, 15, 0.7);
+    --color-grey: #C2C2C2;
+    --color-fon: #F4F2EB;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: "RobotoMono", sans-serif;
+    color: var(--color-dark-green);
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+:where(
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  dl
+):where([class]) {
+    margin-block: 0;
+}
+
+p {
+    margin-block: 0;
+    white-space: pre-wrap;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    pointer-events: none;
+    user-select: none;
+}
+.App{
+    min-height: 100vh;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    background-color: var(--color-fon);
+}
+
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+.fade-exit {
+    opacity: 1;
+}
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+}

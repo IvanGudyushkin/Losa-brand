@@ -1,0 +1,29 @@
+.counter{
+    display: inline-flex;
+    align-items: center;
+    gap:12px;
+}
+.count{
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+.button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out;
+    padding: 0;
+    &:hover{
+        opacity: 0.7;
+    }
+}
+@media (min-width: 320px) and (max-width: 559px) {
+    .button{
+        width: 32px;
+        height: 32px;
+    }
+    .count{
+        font-size: 20px;
+    }
+}

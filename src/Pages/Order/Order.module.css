@@ -1,0 +1,198 @@
+.block{
+    padding-top: 162px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    font-weight: 400;
+    font-size: 24px;
+    width: 1200px;
+}
+.text{
+    font-weight: 400;
+    font-size: 24px;
+}
+.description{
+    font-weight: 400;
+    font-size: 24px;
+    width: 1200px;
+    padding: 96px 0;
+}
+.order{
+    display: inline-flex;
+    gap: 49px;
+    width: 1200px;
+    margin-bottom: 96px;
+}
+.col1{
+    display: flex;
+    flex-direction: column;
+    width: 574px;
+    gap: 48px;
+}
+.form{
+    width: 574px;
+    height: 698px;
+    border: 2px solid var(--color-dark-green);
+    border-radius: 12px;
+    padding: 48px;
+    gap:36px;
+    display: flex;
+    flex-direction: column;
+}
+.row1{
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    width: 100%;
+}
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    input{
+        border: 2px solid var(--color-dark-green);
+        border-radius: 12px;
+        width: 470px;
+        height: 42px;
+        font-weight: 400;
+        font-size: 18px;
+        color: var(--color-dark-green);
+        padding: 12px 14px;
+        background: none;
+    }
+}
+
+.row2{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+.costContainer{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.button{
+    background: none;
+    border: 2px solid var(--color-dark-green) ;
+    border-radius: 50px;
+    width: 100%;
+    height: 42px;
+    padding: 5px 33px 8px 33px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--color-dark-green);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    object-fit: cover;
+    &:hover{
+        opacity: 0.6;
+    }
+}
+.agree{
+    font-weight: 400;
+    font-size: 14px;
+}
+.agree1{
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    margin-bottom: 24px;
+}
+@media (min-width: 320px) and (max-width: 559px) {
+    .block{
+        padding-top: 90px;
+    }
+    .title{
+        font-size: 16px;
+        width: calc(100% - 36px);
+    }
+    .text{
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .description{
+        font-size: 14px;;
+        width: calc(100% - 36px);
+        padding: 36px 0;
+    }
+    .order{
+        display: flex;
+        gap: 36px;
+        width: calc(100% - 36px);
+        flex-direction: column;
+        margin-bottom: 48px;
+    }
+    .col1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 24px;
+    }
+    .form{
+        width: 100%;
+        height: auto;
+        border:none;
+        border-radius: 12px;
+        padding: 0;
+        gap:16px;
+        display: flex;
+        flex-direction: column;
+    }
+    .row1{
+        gap: 14px;
+    }
+    .inputContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        input{
+            width: 100%;
+            height: 39px;
+            font-size: 14px;
+        }
+    }
+
+    .row2{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+    .costContainer{
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+    .button{
+        background: none;
+        border: 2px solid var(--color-dark-green) ;
+        border-radius: 50px;
+        width: 100%;
+        height: 42px;
+        padding: 0 14px;
+        font-size: 14px;
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+    .agree{
+        font-weight: 400;
+        font-size: 10px;
+        letter-spacing: 0.1em;
+    }
+    .agree1{
+        font-weight: 400;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        margin-bottom: 0;
+    }
+}

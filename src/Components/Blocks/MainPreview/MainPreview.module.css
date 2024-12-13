@@ -1,0 +1,105 @@
+.preview {
+    background-image: url("../../../Assets/Bg/MainPreview.webp");
+    background-position: top center ;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    padding: 160px 0;
+    gap:40px;
+    align-items: center;
+}
+.content{
+    flex-direction: column;
+    gap:190px;
+    align-items: flex-end;
+    width: 1200px;
+    justify-content: flex-end;
+    display: flex;
+}
+.previewContent {
+    width: 566px;
+    margin: 0 auto;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    p {
+        font-weight: 300;
+        font-size: 24px;
+        color: var(--color-fon);
+        text-align: right;
+    }
+}
+.button{
+    background: none;
+    border: 2px solid #f8f5f0;
+    border-radius: 50px;
+    width: 455px;
+    height: 42px;
+    padding: 5px 0 8px 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--color-fon);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    &:hover{
+        opacity: 0.6;
+    }
+}
+@media (min-width: 960px) and (max-width: 1399px) {
+    .preview{
+        padding: 97px 0;
+
+    }
+    .content{
+        width: 800px;
+        gap:68px;
+    }
+    .previewContent {
+        font-weight: 300;
+        font-size: 18px;
+        color: var(--color-fon);
+        width: 800px;
+        height: 126px;
+        align-self: center;
+    }
+}
+@media (min-width: 320px) and (max-width: 559px) {
+    .preview {
+        padding: 26px 0;
+        height: 85vh;
+    }
+    .content{
+        flex-direction: column;
+        gap:36px;
+        width: calc(100% - 36px);
+    }
+    .previewContent {
+        font-weight: 300;
+        font-size: 16px;
+        color: var(--color-fon);
+        width: 100%;
+        align-self: center;
+        gap: 19px;
+        p {
+            font-weight: 300;
+            font-size: 16px;
+            color: var(--color-fon);
+            text-align: left;
+        }
+    }
+    .button{
+         width: 100%;
+         height: 36px;
+         padding: 0;
+         font-size: 14px;
+     }
+
+}

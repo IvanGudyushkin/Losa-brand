@@ -1,0 +1,82 @@
+.block {
+    background-image: url("../../../Assets/Bg/MainLosaBlock.webp");
+    background-position: center center ;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 160px 0;
+    align-items: center;
+    justify-content: center;
+}
+.content {
+    width: 1200px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    display: flex;
+    height: 100%;
+}
+.button,
+.buttonAbout{
+    background: none;
+    border:2px solid #f8f5f0;
+    border-radius: 50px;
+    width: 364px;
+    height: 42px;
+    padding: 5px 33px 8px 33px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 300;
+    font-size: 24px;
+    color: var(--color-fon);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    &:hover{
+        opacity: 0.6;
+    }
+}
+.buttonAbout{
+    cursor: unset;
+    width: 263px;
+    &:hover{
+        opacity: 1;
+    }
+}
+@media (min-width: 960px) and (max-width: 1399px) {
+    .block {
+        padding: 104px 0;
+    }
+    .content{
+        width: 800px;
+    }
+    .title {
+        width: 339px;
+        height: 157px;
+    }
+    .button{
+        font-size: 18px;
+        width: 339px;
+        height: 36px;
+    }
+}
+@media (min-width: 320px) and (max-width: 559px) {
+    .block {
+        padding: 48px 0;
+        background-position: 600px;
+    }
+    .content{
+        width: calc(100% - 36px)
+    }
+    .title {
+        width: 279px;
+        height: 65px;
+    }
+    .button{
+        font-size: 14px;
+        width: 100%;
+        padding: 0 16px;
+        height: 36px;
+    }
+}

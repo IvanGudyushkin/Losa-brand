@@ -1,0 +1,138 @@
+.block{
+    padding-top: 162px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.order{
+    font-weight: 400;
+    font-size: 24px;
+    width: 1200px;
+    margin-bottom: 96px;
+}
+.description{
+    font-weight: 400;
+    font-size: 24px;
+    width: 1200px;
+    margin-bottom: 96px;
+}
+.row,
+.row2{
+    margin-bottom: 96px;
+    display:inline-flex ;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 1200px;
+}
+.row2{
+    margin-bottom: 96px;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.cost{
+    font-weight: 400;
+    font-size: 24px;
+}
+.button,
+.button2{
+    background: none;
+    border: 2px solid var(--color-dark-green) ;
+    border-radius: 50px;
+    width: 462px;
+    height: 42px;
+    padding: 0 33px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--color-dark-green);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    object-fit: cover;
+    &:hover{
+        opacity: 0.6;
+    }
+}
+.button2{
+    width: 540px;
+    align-self: flex-end;
+}
+.ifNo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:450px;
+    height: 520px;
+    width: 1200px;
+    margin-bottom: 96px;
+}
+.container{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap:48px;
+    margin: 0 auto 96px auto;
+}
+@media (min-width: 320px) and (max-width: 559px) {
+    .block {
+        padding-top: 90px;
+    }
+    .order{
+        width: calc(100% - 36px);
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+    .description{
+        font-size: 14px;
+        width: calc(100% - 36px);
+        margin-bottom: 48px;
+    }
+    .row,
+    .row2{
+        margin-bottom: 24px;
+        display:flex ;
+        flex-direction: column;
+        gap:14px;
+        width: calc(100% - 36px);
+    }
+    .col{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .cost{
+        font-size: 16px;
+    }
+    .button,
+    .button2{
+        height: 36px;
+        padding: 0 16px;
+        font-size: 14px;
+        width: 100%;
+    }
+    .button2{
+        width: 100%;
+        align-self: flex-end;
+    }
+    .container{
+        width: calc(100% - 36px);
+        flex-direction: column;
+        gap:24px;
+        margin: 0 auto 48px auto;
+        align-items: center;
+    }
+    .ifNo{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 77vh;
+        width: calc(100% - 36px);
+    }
+}
